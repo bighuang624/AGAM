@@ -1,6 +1,6 @@
 """
 SUN original website (where to download images and attributes): http://cs.brown.edu/~gmpatter/sunattributes.html
-split rule：https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly/
+split rule: https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly/
 reference: "Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly "
 """
 

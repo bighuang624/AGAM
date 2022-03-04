@@ -3,7 +3,7 @@
 PyTorch implementation of the paper:
 
 * **Title**: Attributes-Guided and Pure-Visual Attention Alignment for Few-Shot Recognition
-* **Author**: [Siteng Huang](https://kyonhuang.top/), Min Zhang, Yachen Kang, Donglin Wang
+* **Author**: [Siteng Huang](https://kyonhuang.top/), [Min Zhang](https://remimz.github.io/), [Yachen Kang](https://yachenkang.github.io/), [Donglin Wang](https://milab.westlake.edu.cn/)
 * **Conference**: Proceedings of the 35th AAAI Conference on Artificial Intelligence (AAAI 2021)
 * **More details**: [[arXiv]](https://arxiv.org/abs/2009.04724) | [[homepage]](https://kyonhuang.top/publication/attributes-guided-attention-module)
 
@@ -42,6 +42,8 @@ You can download datasets automatically by adding `--download` when running the 
 1. Create the dir `AGAM/datasets/cub`;
 2. Download `CUB_200_2011.tgz` from [here](https://drive.google.com/file/d/1hbzc_P1FuxMkcabkgn9ZKinBwW683j45/view), and put the archive into `AGAM/datasets/cub`;
 3. Running the program with `--download`.
+
+Update: As the CUB dataset need to be converted into hdf5 format with`--download`, we now release the generated hdf5 and json files for your convenience. You can download these files from [here](https://drive.google.com/drive/folders/1OTEIOyki35K1XQ_qRUZJTG0h_q7MDtDR?usp=sharing) and put them into `AGAM/datasets/cub`, and then `--download` is no longer needed when running the program.
 
 **SUN**:
 
