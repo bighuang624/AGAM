@@ -19,6 +19,8 @@ The code runs correctly with
 
 ## How to run
 
+### Training
+
 ```bash
 # clone project
 git clone https://github.com/bighuang624/AGAM.git
@@ -31,6 +33,14 @@ python train.py --train-data [train_data] --test-data [test_data] --backbone [ba
 python train.py --train-data cub --test-data cub --backbone conv4 --num-shots 1 --train-tasks 50000 --semantic-type class_attributes
 # Example: run on SUN dataset, ResNet-12 backbone, 5 shot, multiple GPUs
 python train.py --train-data sun --test-data sun --backbone resnet12 --num-shots 5 --train-tasks 40000  --semantic-type image_attributes --multi-gpu
+```
+
+### Evaluation
+
+Update: Now you can reproduce the main results of the CUB dataset using the trained model weights downloaded from [here](https://drive.google.com/drive/folders/1cyIE21DZb9X1fK9X3FSqJlRGf99h_aY-?usp=sharing). Note that the reproduced results may be slightly different from the reported ones as the random sampling of episodes is affected by random seeds. After downloading the weights, you can use the command:
+
+```bash
+python eval.py --train-data cub --test-data cub --backbone [backbone] --num-shots 5 --semantic-type class_attributes --test-only --model-path [model_path]
 ```
 
 ### Data Preparation
